@@ -1,0 +1,149 @@
+.editing {
+  text-align: center; }
+
+.user {
+  display: flex; }
+  .user .user__block {
+    margin-left: 1rem; }
+    .user .user__block a {
+      text-decoration: none;
+      color: black; }
+
+.navigation {
+  z-index: 999;
+  position: relative; }
+  .navigation .header {
+    position: fixed;
+    width: 100%;
+    background: white;
+    border-bottom: 3px solid red; }
+    .navigation .header .nav {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .navigation .header .nav .nav__logo {
+        padding-top: 2rem; }
+        .navigation .header .nav .nav__logo img {
+          width: 150px;
+          height: 40px; }
+      .navigation .header .nav .nav__list {
+        list-style-type: none;
+        z-index: 99; }
+        .navigation .header .nav .nav__list .nav__item {
+          display: inline-block;
+          z-index: 99; }
+          .navigation .header .nav .nav__list .nav__item .nav__link {
+            z-index: 99;
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            color: black;
+            padding: 1rem 0.5rem;
+            margin-left: 3rem;
+            transition: 0.3s;
+            font-size: 1.6rem;
+            position: relative; }
+            .navigation .header .nav .nav__list .nav__item .nav__link:after {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 100%;
+              bottom: 0;
+              background: transparent;
+              border-bottom: 3px solid red;
+              transition: 0.3s; }
+            .navigation .header .nav .nav__list .nav__item .nav__link:hover {
+              color: red; }
+        .navigation .header .nav .nav__list .active .nav__link {
+          color: red;
+          font-weight: 700; }
+          .navigation .header .nav .nav__list .active .nav__link:after {
+            right: 0; }
+    .navigation .header .nav-mobile {
+      width: 100%;
+      background: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      display: none; }
+      .navigation .header .nav-mobile .nav__logo {
+        padding-top: 2rem; }
+        .navigation .header .nav-mobile .nav__logo img {
+          width: 150px;
+          height: 40px; }
+      .navigation .header .nav-mobile .nav__toggle i {
+        font-size: 2rem; }
+      .navigation .header .nav-mobile .nav__list {
+        z-index: 99;
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        list-style-type: none;
+        background: white;
+        border: 1px solid #eeee; }
+        .navigation .header .nav-mobile .nav__list .nav__item .nav__link {
+          z-index: 99;
+          display: block;
+          text-align: center;
+          text-decoration: none;
+          color: black;
+          padding: 1rem 0.5rem;
+          margin-left: 0rem;
+          transition: 0.3s;
+          position: relative; }
+          .navigation .header .nav-mobile .nav__list .nav__item .nav__link:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 100%;
+            bottom: 0;
+            background: transparent;
+            border-bottom: 3px solid red;
+            transition: 0.3s; }
+        .navigation .header .nav-mobile .nav__list .active .nav__link {
+          color: red;
+          font-weight: 700; }
+          .navigation .header .nav-mobile .nav__list .active .nav__link:after {
+            right: 0; }
+
+.about {
+  height: 100vh;
+  background: black; }
+
+.services {
+  height: 100vh;
+  background: yellow; }
+
+.signup {
+  height: 100vh;
+  background: red; }
+
+@media only screen and (max-width: 767px) {
+  .navigation .header {
+    position: fixed;
+    width: 100%; }
+    .navigation .header .language {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; }
+      .navigation .header .language .laguage-content p {
+        text-align: center; }
+    .navigation .header .nav {
+      display: none; }
+    .navigation .header .nav-mobile {
+      display: flex; }
+  .user {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0; }
+    .user .user__block {
+      margin-right: 1rem; }
+      .user .user__block a {
+        text-decoration: none;
+        color: black; } }

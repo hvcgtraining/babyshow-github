@@ -1,0 +1,70 @@
+.hotdeal__inner {
+  position: relative; }
+  .hotdeal__inner .hotdeal__img {
+    width: 100%;
+    height: 100%; }
+  .hotdeal__inner .hotdeal__content {
+    position: absolute;
+    top: 50;
+    left: 50;
+    transform: translate(-50%, -50%); }
+
+.footer__main {
+  background: #FE9798; }
+
+.footer {
+  background: #FE9798; }
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0; }
+  .footer__inner .footer__logo img {
+    width: 150px;
+    height: 40px; }
+  .footer__inner .footer__content {
+    color: white;
+    text-align: right; }
+
+.user__inner {
+  justify-content: flex-end; }
+
+@media only screen and (max-width: 767px) {
+  .user__inner {
+    justify-content: flex-end !important;
+    padding: 0 !important; }
+    .user__inner .user__block {
+      margin-right: 0 !important; }
+      .user__inner .user__block a {
+        color: white !important; } }
+
+.hotdealUp, .hotdealDown {
+  background: #4ED674 !important;
+  color: white !important;
+  display: inline-block;
+  padding: 1rem 6rem;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 3rem !important; }
+
+.hotdealDown {
+  background: #F7DE1B !important; }
+
+.signupQ {
+  text-align: center;
+  padding: 4rem 0; }
+  .signupQ h1 {
+    color: red;
+    padding-bottom: 3rem; }
+  .signupQ input[type="email"] {
+    outline: none;
+    border: 2px solid red;
+    padding: 1rem 3rem; }
+  .signupQ input[type="submit"] {
+    background: red;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border: 2px solid red;
+    outline: none; }
