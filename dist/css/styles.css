@@ -1314,6 +1314,10 @@ li {
     width: 100%;
     height: 100%; } }
 
+@media only screen and (max-width: 575px) {
+  .wrapper-product .product-item .item_content .button .btn-item {
+    font-size: 1.4rem !important; } }
+
 .button {
   margin: 3rem 0;
   text-align: center;
